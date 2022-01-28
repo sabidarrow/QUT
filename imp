@@ -1,0 +1,4 @@
+# define number of classes based on YAML
+import yaml
+with open("/content/data.yaml", 'r') as stream:
+    num_classes = str(yaml.safe_load(stream)['nc'])
