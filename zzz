@@ -1,0 +1,5 @@
+# train yolov5s on custom data for 100 epochs
+# time its performance
+%%time
+%cd /content/yolov5/
+!python train.py --img 416 --batch 128 --epochs 200 --data /content/data.yaml --cfg ./models/custom_yolov5l.yaml --weights '' --name yolov5l_results  --cache
